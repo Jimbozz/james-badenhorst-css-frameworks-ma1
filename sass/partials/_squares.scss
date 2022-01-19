@@ -1,0 +1,28 @@
+.squares {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 220px);
+  grid-gap: 1.5rem;
+  margin: 2rem 1rem;
+  justify-content: center;
+
+  &__item {
+    border-radius: 15%;
+    padding-top: 100%;
+    background: getColour(secondary);
+
+
+    &--pink {
+      @extend .squares__item;
+      background: getColour(primary);
+      border: 1px solid white;
+    }
+
+    &--pink--outline {
+      @extend .squares__item;
+      background: white;
+      border: 3px solid getColour(primary);
+    }
+    
+  }
+
+}
