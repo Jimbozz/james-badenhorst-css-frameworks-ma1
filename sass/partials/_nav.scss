@@ -1,6 +1,9 @@
 .nav {
   background: getColour(secondary);
 
+  &__logo {
+    font-family: $primary-font;
+  }
   &__list {
     justify-content: flex-end;
   }

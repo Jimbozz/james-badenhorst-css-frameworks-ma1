@@ -2,7 +2,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Open sans", sans-serif;
+  font-family: $primary-font;
 }
 
 h1 {
@@ -14,6 +14,7 @@ h1 {
 
 a {
   color: getColour(light-grey);
+  font-family: $secondary-font;
 }
 
 .page__heading {

@@ -20,10 +20,11 @@
 @import "../bootstrap-scss/popover";
 @import "../bootstrap-scss/dropdown";
 
-
+@import "partials/typography";
 @import "partials/layout";
 @import "partials/mixins";
-@import "partials/typography";
 @import "partials/squares";
-@import "partials/nav";
 @import "partials/footer";
+@import "partials/nav";
+
+

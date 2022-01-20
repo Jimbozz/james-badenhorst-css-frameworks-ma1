@@ -5333,6 +5333,26 @@ fieldset:disabled .btn {
   color: #adb5bd;
 }
 
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, .h1 {
+  font-size: 1.8em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #463F3A;
+}
+
+a {
+  color: #8D8D8D;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+.page__heading {
+  text-align: center;
+}
+
 html,
 body {
   height: 100%;
@@ -5360,25 +5380,6 @@ footer {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
-  font-family: "Open sans", sans-serif;
-}
-
-h1, .h1 {
-  font-size: 1.8em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  color: #463F3A;
-}
-
-a {
-  color: #8D8D8D;
-}
-
-.page__heading {
-  text-align: center;
 }
 
 .squares {
@@ -5430,8 +5431,22 @@ a {
   border: 3px solid #C32C72;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #F4F3EE;
+}
+
 .nav {
   background: #F4F3EE;
+}
+
+.nav__logo {
+  font-family: "Open Sans", sans-serif;
 }
 
 .nav__list {
@@ -5442,15 +5457,5 @@ a {
 
 .nav__link {
   color: #463F3A;
-}
-
-.footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #F4F3EE;
 }
 /*# sourceMappingURL=style.css.map */

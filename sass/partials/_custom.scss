@@ -6,6 +6,10 @@ $colours: (
   light-grey: #8D8D8D,
 );
 
+$primary-font: "Open Sans", sans-serif;
+$secondary-font: "Archivo Narrow", sans-serif;
+
+
 
 @function getColour($colour) {
   @return map-get($colours, $colour);
