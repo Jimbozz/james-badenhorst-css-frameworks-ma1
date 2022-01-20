@@ -1,0 +1,11 @@
+.nav {
+  background: getColour(secondary);
+
+  &__list {
+    justify-content: flex-end;
+  }
+
+  &__link {
+    color: getColour(dark-grey);
+  }
+}
