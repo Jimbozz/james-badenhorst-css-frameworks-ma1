@@ -5393,15 +5393,15 @@ footer {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 0.875rem;
-  margin: 1rem 3rem;
+  grid-gap: 1.5rem;
+  margin: 0 2rem 8rem;
 }
 
 @media (min-width: 40em) {
   .squares__grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
-    margin: 1rem 6rem;
+    margin: 0 8rem 8rem;
   }
 }
 
@@ -5409,7 +5409,7 @@ footer {
   .squares__grid {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
-    margin: 1rem 8rem;
+    margin: 0 8rem 8rem;
     grid-gap: 1rem;
   }
 }
@@ -5424,7 +5424,7 @@ footer {
 
 .squares__item--pink {
   background: #C32C72;
-  border: 1px solid white;
+  border: 2px solid white;
 }
 
 .squares__item--pink--outline {
@@ -5433,23 +5433,52 @@ footer {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: #F4F3EE;
-  font-size: 0.8em;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.footer__item--first {
+  margin-bottom: 10px;
+}
+
+@media (min-width: 64em) {
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #F4F3EE;
+    font-size: 0.8em;
+    padding: 1rem 8rem;
+  }
+  .footer__item--first {
+    margin-bottom: 0px;
+  }
 }
 
 .nav {
   background: #F4F3EE;
-  padding: 1rem 5rem;
+  padding: 1rem 2rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+@media (min-width: 64em) {
+  .nav {
+    padding: 1rem 7rem;
+  }
 }
 
 .nav__logo {
   font-family: "Open Sans", sans-serif;
+  font-size: 1.7rem;
 }
 
 .nav__list {
@@ -5465,5 +5494,10 @@ footer {
 .nav__link {
   color: #463F3A;
   font-family: "Archivo Narrow", sans-serif;
+}
+
+.nav-shadow {
+  -webkit-box-shadow: 0px 6px 12px #00000021;
+          box-shadow: 0px 6px 12px #00000021;
 }
 /*# sourceMappingURL=style.css.map */

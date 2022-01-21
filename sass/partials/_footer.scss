@@ -1,6 +1,31 @@
 .footer {
-  display: flex;
-  justify-content: space-between;
-  background-color: getColour(secondary);
-  font-size: 0.8em;
+  background-color: white;
+  padding: 2rem;
+  text-align: center;
+
+  &__item {
+
+    &--first {
+      margin-bottom: 10px;
+    }
+    
+  }
+
+  @include breakpoint-up(large) {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: getColour(secondary);
+    font-size: 0.8em;
+    padding: 1rem 8rem;
+
+    &__item {
+
+      &--first {
+        margin-bottom: 0px;
+      }
+      
+    }
+  }
 }
