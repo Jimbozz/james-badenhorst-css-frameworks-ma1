@@ -1,5 +1,6 @@
 .nav {
   background: getColour(secondary);
+  padding: 1rem 5rem;
 
   &__logo {
     font-family: $primary-font;
@@ -8,7 +9,15 @@
     justify-content: flex-end;
   }
 
+  &__item {
+
+    &--active {
+      color: getColour(primary) !important;
+    }
+  }
+
   &__link {
     color: getColour(dark-grey);
+    font-family: $secondary-font;
   }
 }
